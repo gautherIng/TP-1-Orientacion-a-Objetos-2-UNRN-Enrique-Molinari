@@ -8,6 +8,10 @@ public class PlatoPrincipal extends Menu {
 
     @Override
     public boolean esBebida() {
-        return false; // "No, no soy una bebida"
+        return false;
+    }
+
+    public boolean esPlatoPrincipal() {
+        return true;
     }
 }

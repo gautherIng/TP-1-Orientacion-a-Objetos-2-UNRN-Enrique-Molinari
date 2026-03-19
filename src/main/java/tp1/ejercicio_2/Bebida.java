@@ -11,5 +11,9 @@ public class Bebida extends Menu {
         return true;
     }
 
+    @Override
+    public boolean esPlatoPrincipal() {
+        return false;
+    }
 }
 

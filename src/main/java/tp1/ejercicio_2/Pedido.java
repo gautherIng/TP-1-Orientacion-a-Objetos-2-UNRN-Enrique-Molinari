@@ -30,7 +30,7 @@ public class Pedido {
     public double getSubtotalBebidas() {
         double totalBebidas = 0;
         for (DetallePedido detalle : this.detalles) {
-            if (detalle.getItem() instanceof Bebida) {
+            if (detalle.getItem().esBebida()) {
                 totalBebidas = totalBebidas + detalle.calcularSubtotal();
             }
         }
@@ -41,7 +41,7 @@ public class Pedido {
     public double getSubtotalPlatos() {
         double totalPlatos = 0;
         for (DetallePedido detalle : this.detalles) {
-            if (detalle.getItem() instanceof PlatoPrincipal) {
+            if (detalle.getItem().esPlatoPrincipal()) {
                 totalPlatos = totalPlatos + detalle.calcularSubtotal();
             }
         }

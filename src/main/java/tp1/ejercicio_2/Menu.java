@@ -18,4 +18,5 @@ public abstract class Menu {
     }
 
     public abstract boolean esBebida();
+    public abstract boolean esPlatoPrincipal();
 }
